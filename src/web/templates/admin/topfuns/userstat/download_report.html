@@ -1,0 +1,43 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+
+{% block extrahead %}
+
+<link rel="stylesheet" type="text/css" href="/static/admin/css/forms.css"/>
+<link rel="stylesheet" type="text/css" href="/static/admin/css/base.css"/>
+<link rel="stylesheet" type="text/css" href="/static/admin/css/global.css"/>
+<link rel="stylesheet" type="text/css" href="/static/admin/css/widgets.css"/>
+
+<script type="text/javascript" src="/admin/jsi18n/"></script>
+<script type="text/javascript" src="/static/admin/js/core.js"></script>
+<script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+
+{{ form.media }}
+
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+     <a href="../../">{% trans "Home" %}</a> &rsaquo;
+     <a href="../">TopFuns{{ app_label|capfirst }}</a> &rsaquo; 
+     {% trans 'Download Report' %}
+</div>
+{% endblock %}
+
+{% block content %}
+
+    <iframe style="display: none;" id="iframe" name="iframe" src="" onload="document.getElementById('generating').style.display='none';"></iframe>
+
+    <form action="" method="post" target="iframe" onsubmit="document.getElementById('generating').style.display='inline';">{% csrf_token %}
+    <table>
+    {{ form.as_table }}
+    </table>
+    <div>
+    <input type="hidden" name="post" value="yes" />
+    <input type="submit" value="{% trans "Download" %}" />
+    <span id="generating" style="display: none;">
+        <img src='/media/ajax-loader.gif'><label>{% trans 'Report is generating' %}</label>
+    <span>
+    </div>
+    </form>
+{% endblock %}

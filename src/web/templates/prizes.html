@@ -1,0 +1,67 @@
+{% extends "main.html" %}
+
+
+{% block content %}
+
+<div id="prizes">
+    <div class="filling_top"></div>
+    <div class="filling_bottom"></div>    
+
+    {% for prize in prizes %}
+    <div class="one_third left_float">
+        &nbsp;
+        {% if prize.rank == 2 %}
+        <div id="prize_2" class="prize">
+            <div>
+                <img src="{{ prize.img }}" width="115" height="201" />
+            </div>
+            <div class="prize_rank">2 место</div>
+            <div class="prize_name">{{ prize.name }}</div>
+        </div>    
+        {% endif %}
+    </div>
+    
+    <div class="one_third left_float">
+        &nbsp;
+        {% if prize.rank == 1 %}
+        <div id="prize_1" class="prize">
+            <div>
+                <img src="{{ prize.img }}" width="115" height="201" />
+            </div>
+            <div class="prize_rank">1 место</div>
+            <div class="prize_name">{{ prize.name }}</div>
+        </div>    
+        {% endif %}
+    </div>
+    
+    <div class="one_third left_float">   
+        &nbsp;
+        {% if prize.rank == 3 %}
+        <div id="prize_3" class="prize">
+            <div>
+                <img src="{{ prize.img }}" width="115" height="201" />
+            </div>
+            <div class="prize_rank">3 место</div>
+            <div class="prize_name">{{ prize.name }}</div>
+        </div>
+        {% endif %}
+    </div>        
+    {% endfor %}
+</div>
+
+<div class="splitter"></div>
+
+<div style="margin-top: 15px;"></div>
+<div style="margin: 15px 0px 15px 0px;">
+    <div class="page_header">Призы</div>
+</div>
+
+{% for prize in prizes %}
+<div>
+    <div class="prize_rank">{{ prize.rank }} место - {{ prize.name }}</div> 
+    <p>{{ prize.description }}</p>
+</div>
+{% endfor %}
+
+{% endblock %}
+

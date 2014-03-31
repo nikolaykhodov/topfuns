@@ -1,0 +1,272 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-01-11 17:31+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: app/topfuns/admin.py:20 app/topfuns/models.py:79
+#, fuzzy
+msgid "GID"
+msgstr "Номер группы"
+
+#: app/topfuns/admin.py:21 app/topfuns/admin.py:66 app/topfuns/models.py:80
+#: app/topfuns/models.py:106 app/topfuns/models.py:143
+msgid "Name"
+msgstr "Имя"
+
+#: app/topfuns/admin.py:22 app/topfuns/models.py:83
+msgid "Rules"
+msgstr "Правила"
+
+#: app/topfuns/admin.py:32 app/topfuns/admin.py:78 app/topfuns/admin.py:124
+msgid "URL must be within Vkontakte domain"
+msgstr "Ссылка должен быть внутри доменов ВКонтакте"
+
+#: app/topfuns/admin.py:45
+msgid "This is not group URL"
+msgstr "Не является ссылкой на группу"
+
+#: app/topfuns/admin.py:65 app/topfuns/admin.py:111 app/topfuns/models.py:105
+#: app/topfuns/models.py:162 app/topfuns/models.py:173
+#: app/topfuns/models.py:184
+msgid "ID"
+msgstr "Номер"
+
+#: app/topfuns/admin.py:91 app/topfuns/admin.py:136
+msgid "This is not profile URL"
+msgstr "Не является ссылкой на профиль"
+
+#: app/topfuns/admin.py:112
+msgid "Profile URL"
+msgstr "Ссылка на профиль"
+
+#: app/topfuns/admin.py:112
+msgid "You should specify only profile URL"
+msgstr "Вы должны указать ее"
+
+#: app/topfuns/admin.py:153 app/topfuns/models.py:142
+#: app/topfuns/models.py:164 app/topfuns/models.py:175
+msgid "Rank"
+msgstr "Место"
+
+#: app/topfuns/admin.py:154 app/topfuns/models.py:144
+msgid "Description"
+msgstr "Описание"
+
+#: app/topfuns/admin.py:213
+msgid "Block users"
+msgstr "Заблокировать пользователей"
+
+#: app/topfuns/forms.py:11
+msgid "Begin with:"
+msgstr "Начиная с:"
+
+#: app/topfuns/forms.py:13
+msgid "End with"
+msgstr "Заканчивая (включительно):"
+
+#: app/topfuns/forms.py:28
+msgid "Reports"
+msgstr "Отчеты"
+
+#: app/topfuns/models.py:76 app/topfuns/models.py:104
+#: app/topfuns/models.py:141 app/topfuns/models.py:161
+#: app/topfuns/models.py:171 app/topfuns/models.py:183
+msgid "Group"
+msgstr "Группа"
+
+#: app/topfuns/models.py:77
+msgid "Groups"
+msgstr "Группы"
+
+#: app/topfuns/models.py:81 app/topfuns/models.py:107
+msgid "URL"
+msgstr "Ссылка"
+
+#: app/topfuns/models.py:85
+msgid "Wall Scanning Depth"
+msgstr "Глубина сканирования стены"
+
+#: app/topfuns/models.py:86
+msgid "Photos Scanning Depth"
+msgstr "Глубина сканирования фотографий"
+
+#: app/topfuns/models.py:87
+msgid "Board Scanning Depth"
+msgstr "Глубина сканирования обсуждений"
+
+#: app/topfuns/models.py:88
+msgid "Videos Scanning Depth"
+msgstr "Глубина сканирования видео"
+
+#: app/topfuns/models.py:90
+msgid "Wall Posts Count"
+msgstr "Текущее количество постов на стене"
+
+#: app/topfuns/models.py:91
+msgid "Photos Count"
+msgstr "Текущее количество фотографий"
+
+#: app/topfuns/models.py:92
+msgid "Videos Count"
+msgstr "Текущее количество видео"
+
+#: app/topfuns/models.py:93
+msgid "Topics Count"
+msgstr "Текущее количество топиков"
+
+#: app/topfuns/models.py:101
+msgid "Moderator"
+msgstr "Модератор"
+
+#: app/topfuns/models.py:102
+msgid "Moderators"
+msgstr "Модераторы"
+
+#: app/topfuns/models.py:114
+msgid "VK Account"
+msgstr "Аккаунт ВКонтакте"
+
+#: app/topfuns/models.py:115
+msgid "VK Accounts"
+msgstr "Аккаунты ВКонтакте"
+
+#: app/topfuns/models.py:118
+msgid "Login"
+msgstr "Логин"
+
+#: app/topfuns/models.py:119
+msgid "Password"
+msgstr "Пароль"
+
+#: app/topfuns/models.py:120
+msgid "Access Token"
+msgstr "Токен"
+
+#: app/topfuns/models.py:130
+msgid "Prize"
+msgstr "Приз"
+
+#: app/topfuns/models.py:131
+msgid "Prizes"
+msgstr "Призы"
+
+#: app/topfuns/models.py:145
+msgid "Image"
+msgstr "Изображение"
+
+#: app/topfuns/models.py:155 app/topfuns/models.py:156
+msgid "Top"
+msgstr "Топ"
+
+#: app/topfuns/models.py:163 app/topfuns/models.py:174
+msgid "Rating"
+msgstr "Рейтинг"
+
+#: app/topfuns/models.py:165 app/topfuns/models.py:176
+msgid "Rank Change"
+msgstr "Изменение позиции"
+
+#: app/topfuns/models.py:180
+msgid "Blocked User"
+msgstr "Заблокированный пользователь"
+
+#: app/topfuns/models.py:181
+msgid "Blocked Users"
+msgstr "Заблокированные пользователи"
+
+#: templates/admin/index.html:20
+#, python-format
+msgid "Models available in the %(name)s application."
+msgstr ""
+
+#: templates/admin/index.html:21
+#, python-format
+msgid "%(name)s"
+msgstr ""
+
+#: templates/admin/index.html:25
+#: templates/admin/topfuns/userstat/download_report.html:23
+msgid "Download Report"
+msgstr "Скачать отчет"
+
+#: templates/admin/index.html:39
+msgid "Add"
+msgstr "Добавить"
+
+#: templates/admin/index.html:45
+#, fuzzy
+msgid "Change"
+msgstr "Изменение позиции"
+
+#: templates/admin/index.html:55
+msgid "You don't have permission to edit anything."
+msgstr "У вас недостаточно прав для редактирования"
+
+#: templates/admin/index.html:63
+msgid "Recent Actions"
+msgstr "Недавние действия"
+
+#: templates/admin/index.html:64
+msgid "My Actions"
+msgstr "Мои действия"
+
+#: templates/admin/index.html:68
+msgid "None available"
+msgstr "Пусто"
+
+#: templates/admin/index.html:82
+msgid "Unknown content"
+msgstr "Неизвестное содержимое"
+
+#: templates/admin/topfuns/top/change_list.html:42
+#: templates/admin/topfuns/userstat/download_report.html:21
+msgid "Home"
+msgstr "Начало"
+
+#: templates/admin/topfuns/top/change_list.html:64
+#, python-format
+msgid "Add %(name)s"
+msgstr ""
+
+#: templates/admin/topfuns/top/change_list.html:70
+msgid "Update Top"
+msgstr "Пересчитать рейтинг"
+
+#: templates/admin/topfuns/top/change_list.html:78
+msgid "Please correct the error below."
+msgid_plural "Please correct the errors below."
+msgstr[0] "Исправьте ошибку ниже"
+msgstr[1] "Исправьте ошибки ниже"
+
+#: templates/admin/topfuns/top/change_list.html:89
+msgid "Filter"
+msgstr "Фильтр"
+
+#: templates/admin/topfuns/userstat/download_report.html:37
+msgid "Download"
+msgstr "Скачать отчет"
+
+#: templates/admin/topfuns/userstat/download_report.html:39
+msgid "Report is generating"
+msgstr "Отчет генерируется"
+
+#~ msgid "Recalculate Top"
+#~ msgstr "Пересчитать топ"
+
+#, fuzzy
+#~ msgid "Blocked"
+#~ msgstr "Заблокировать пользователей"

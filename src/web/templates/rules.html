@@ -1,0 +1,22 @@
+{% extends "main.html" %}
+
+
+{% block content %}
+
+
+<div id="rules">
+    <div class="filling_top">
+        <span class="rules_header page_header">Правила</span>
+    </div>
+    
+    <div class="rules_text">
+    {% autoescape off %}
+       {{ rules }}
+    {% endautoescape %}
+    </div>
+    
+    <div class="filling_bottom"></div>
+</div>
+
+
+{% endblock %}

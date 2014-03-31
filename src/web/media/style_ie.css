@@ -1,0 +1,14 @@
+#header {
+    margin-bottom: -3px;
+}
+
+img {
+    border: none;
+}
+
+/*
+Иначе изменения позиции прокручиваются вместе со страницей
+*/
+#page {
+  position: relative;
+}

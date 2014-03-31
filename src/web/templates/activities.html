@@ -1,0 +1,10 @@
+{% extends "main.html" %}
+
+
+{% block content %}
+
+{% for user in top %}
+    {{ user.change }} <a href="http://vk.com/id{{ user.who }}" target="blank">http://vk.com/id{{ user.who }}</a> {{ user.rating }} <br/>
+{% endfor %}
+
+{% endblock %}

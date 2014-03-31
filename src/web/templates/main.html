@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<head>
+    <link rel="stylesheet" type="text/css" href="/media/style.css" />
+    <!--[if IE 7]><link rel="stylesheet" type="text/css" href="/media/style_ie.css" /><![endif]-->
+    
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-27530242-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>    
+</head>
+<body>
+<div id="page">
+
+    <div id="header">
+        <img src="/media/header.png" width="807" height="140" />
+    </div>
+  
+    <div id="container">
+        <div id="left_column">
+            <div id="west_rays">&nbsp;</div>
+        </div>
+
+        <div id="central_column">
+            <table id="menu" cellpadding="0" cellspacing="0">
+                <tr class="top">
+                      <td><a href="/actions/">АКТИВНОСТЬ</a></td>
+                      <td><a href="/top/">РЕЙТИНГ</a></td>
+                      <td><a href="/prizes/">ПРИЗЫ</a></td>
+                      <td><a href="/rules/">ПРАВИЛА</a></td>
+                </tr>
+                <tr class="bottom">
+                    <td>
+                        <img src="/media/star.png" alt="" width="34" height="33">
+                        <div>Комментируй, жми Мне нравится</div>
+                    </td>
+                    <td>
+                        <img src="/media/chart.png" alt="" width="41" height="33">
+                        <div>Получай баллы! Стань лучшим фаном!</div>
+                    </td>
+                    <td>
+                        <img src="/media/magic_box.png" alt="" width="52" height="43">
+                        <div>Получай классные призы</div>
+                    </td>
+                    <td>
+                        <img src="/media/petition.png" alt="" width="38" height="36">
+                        <div>FAQ</div>
+                    </td>
+                </tr>
+            </table>
+            
+            <div style="margin-top: 20px;">&nbsp;</div>      
+            <div class="splitter"></div>
+            
+            {% if needs_loader %}
+            <div id="loader"></div>
+            {% endif %}
+            
+            <div id="content" {% if needs_loader %}style="display: none;"{% endif %}>
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+
+        <div id="right_column">
+            <div id="east_rays"></div>
+        </div>
+    </div>
+
+    <div id="footer">&nbsp;</div>
+</div>
+
+</body>
+</html>

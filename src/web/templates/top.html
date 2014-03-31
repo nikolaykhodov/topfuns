@@ -1,0 +1,69 @@
+{% extends "main.html" %}
+
+
+{% block content %}
+
+<div id="top">
+
+    {% for user in top %}
+
+    <div style="margin-top: 20px;">&nbsp;</div>
+
+    <div class="user" id="id{{ user.who }}">
+        <div class="change left_float">
+            <div class="centered">
+                {% if user.change != 0 %}
+                <div style="color: {% if user.change > 0 %}green{%else%}red{%endif%};">{% if user.change > 0 %}+{%endif%}{{ user.change }}</div>
+                <img src="/media/arrow_{% if user.change > 0 %}up{%else%}down{%endif%}.png" width="9" height="11" />
+                {% endif %}
+            </div>
+        </div>
+        <div class="rank left_float">
+            <span>{{ user.rank }}</span>
+        </div>
+        <div class="avatar left_float">
+            <a href="/actions/{{ user.who }}/"><img src="http://vk.com/images/question_100.gif" width="50" height="50" id="avatar{{ user.who }}"/></a>
+        </div>
+        <div class="info left_float">
+            <a href="/actions/{{ user.who }}/"><span class="name" id="name{{ user.who }}">?? ????</span></a>
+            <span class="gauge" style="width: {{ user.relative_rating }}%;">&nbsp;</span>
+        </div>
+        <div class="rating left_float">
+            <span>{{ user.rating }}</span>
+            <img src="/media/ladder.png" width="15" height="15" />
+        </div>
+    </div>
+
+    <br style="clear: both;" />
+    {% endfor %}
+
+</div>
+
+<script src="http://vkontakte.ru/js/api/xd_connection.js?2" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+var ids = []
+$('div[id*="id"][class="user"]').each(function() {
+    ids.push(/id(\d+)/.exec(this.id))[1];
+});
+
+VK.init(function() {
+    VK.api("getProfiles", {uids:ids.join(','), fields:"first_name,last_name,photo"}, function(data) {
+        if(data.response) {
+            for(i = 0; i < data.response.length; i++) {
+                var name = data.response[i].first_name + ' ' + data.response[i].last_name;
+                var avatar = data.response[i].photo;
+                var id = data.response[i].uid;
+                
+                $('#name'+id).html(name);
+                $('#avatar'+id).attr({src: avatar});                        
+            }
+        }
+                
+        $("#loader").hide();
+        $("#content").show();
+    });
+});
+</script>
+{% endblock %}

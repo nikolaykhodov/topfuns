@@ -1,0 +1,385 @@
+/*
+    Template Skeleton
+*/
+body {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 0.8em;
+  padding: 0;
+  margin: 0;  
+  background-color: #cedee9; 
+}
+
+#page {
+  display: block;
+  width: 807px; 
+  float:left;
+  height: 1000px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  
+}
+
+#left_column {
+  width: 131px;
+  height: 100%;
+  float: left;
+  background-color: #cedee9;
+}
+
+#west_rays {
+  background: url(/media/west_rays.png) no-repeat;
+  margin-top: 51px;
+  margin-left: 7px;
+  height: 456px;
+  width: 124px;
+}
+
+#central_column {
+  width: 543px;
+  float: left;
+  background-color: #ffffff;
+  border-left: 1px solid #a5b5d1;
+  border-right: 1px solid #a5b5d1;
+  border-bottom: 1px solid #a5b5d1;
+  position: relative;
+  min-height: 600px;
+}
+
+#right_column {
+  width: 101px;
+  height: 100%;
+  float: left;
+  background-color: #cedee9;
+}
+
+#east_rays {
+  background: url(/media/east_rays.png) no-repeat;
+  margin-top: 51px;
+  height: 456px;
+  width: 100%;
+}
+
+#menu {
+  width: 100%;
+  border: none;
+
+}
+
+#menu  tr {
+  padding: 0;
+  margin: 0;
+}
+
+#menu td {
+  width: 25%;
+  text-align: center;
+}
+
+#menu tr.top a {
+  line-height: 42px;
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.2em;
+  color: #10214f;
+}
+#menu tr.top a:hover {
+  color: #ffffff;
+  background: url(/media/menu-fill.png) repeat-x;
+}
+
+#menu tr.bottom td {
+  padding-top: 5px;
+  font-size: 0.85em;
+}
+#menu tr.bottom div {
+  margin-top: 15px;
+}
+#menu tr.bottom img {
+  margin: 0 auto;
+  display: block;
+}
+
+
+div#loader {
+    width: 128px;
+    height: 128px;
+    background: url(/media/loader.gif) no-repeat;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;    
+}
+
+#content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.page_header {
+    color: #ff7606;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+/*
+    Common Element
+*/
+
+div.splitter {
+    background: #cedee9;
+    width: 500px;
+    margin: 0 auto;
+    height: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: block;
+}
+
+.left_float {
+    float: left;
+}
+
+.one_third {
+    width: 33%;
+}
+
+div.filling_top {
+    background: url(/media/h_filling.png) repeat-x 0px 0px;
+    width: 100%;
+    height: 68px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+div.filling_bottom {
+    background: url(/media/h_filling.png) repeat-x 0px -68px;
+    width: 100%;
+    height: 68px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+/*
+    /top
+*/
+
+#top .user {
+    width: 500px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+#top .user .change {
+    width: 45px;
+    height: 50px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+
+#top .user .change .centered {
+    height: 30px;
+    position: relative;
+    top: 50%;
+    margin-top: -15px;
+}
+
+
+#top .user .rank {
+    width: 60px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 35px;
+    color: #4b4b4b;
+}
+
+#top .user .avatar {
+    width: 50px;
+    height: 50px;
+}
+
+#top .user .info {
+    padding-left: 10px;
+    width: 255px;
+    height: 50px;
+    padding-right: 10px;
+}
+
+#top .user .info .name {
+    color: #1b3f7b;
+    font-weight: bold;
+}
+
+#top .user .info  a {
+    text-decoration: none;
+}
+
+#top .user .info .gauge {
+    background: url(/media/rating-fill.png) repeat-x;
+    margin-top: 5px;
+    display: block;
+    line-height: 8px;
+}
+
+#top .user .rating {
+    height: 50px;
+    width: 40px;
+    text-align: center;
+    color: #1b3f7b;
+    font-size: 20px;
+}
+
+#top .user .rating img {
+    display: block;
+    margin: 0 auto;
+}
+
+/*
+    /rules
+*/
+
+
+#rules {
+    position: relative;
+}
+
+#rules pre {
+
+
+    width: 100%;
+    margin: 0 auto;
+}
+
+#rules .rules_header {
+    position: relative;
+    top: 20px;
+    left: 20px;   
+}
+
+#rules .rules_text {
+    padding-top: 68px;
+    padding-bottom: 20px;
+    width: 500px;
+    text-align: justify;
+}
+
+/*
+    /prizes/
+*/
+
+div#prizes {
+    width: 100%;
+    height: 317px;
+    margin: 0 auto;
+    position: relative;
+}
+
+div.prize {
+    position: absolute;
+    top: 40px;
+    width: 140px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+div.prize_rank {
+    font-weight: bold;
+    color: #1d377a;
+}
+
+div.prize_name {
+    color: #1d377a;
+    text-decoration: underline;
+}
+
+/*
+    /actions/
+*/
+
+#actions {
+    position: relative;
+    width: 100%;
+}
+
+#actions .user_info, #actions #activity {
+    padding-top: 30px;
+    width: 420px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+#actions  .avatar {
+    width: 50px;
+    height: 50px;
+}
+
+#actions  .info {
+    padding-left: 10px;
+    width: 275px;
+    height: 50px;
+    padding-right: 10px;
+}
+
+#actions  .info .name {
+    color: #1b3f7b;
+    font-weight: bold;
+}
+
+#actions  .info  a {
+    text-decoration: none;
+}
+
+#actions  .info .gauge {
+    background: url(/media/rating-fill.png) repeat-x;
+    margin-top: 5px;
+    display: block;
+    line-height: 8px;
+}
+
+#actions  .rating {
+    height: 50px;
+    width: 40px;
+    text-align: center;
+    color: #1b3f7b;
+    font-size: 20px;
+}
+
+#actions  .rating img {
+    display: block;
+    margin: 0 auto;
+}
+
+#actions .action {
+    border-top: 1px solid #f1f1f1;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+#actions .action .info {
+    width: 325px !important;
+    padding-right: 0px !important;
+}
+
+#actions .stat {
+    position: relative;
+}
+
+#actions .desc {
+    height: 16px;
+    position: absolute;
+    top: 3px;
+    left: 19px;
+}
+
+
+
+
+
+
+
+
